@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raag Rachna Music Company | Complete Music Production, Song Making, Video Shoot & Music Store</title>
+    <meta name="description" content="Raag Rachna Music Company - Premier Recording Studio & Music Company. Song Composing, Vocal Recording, 4K Music Video Shoot, Audio Mixing/Mastering & Studio Gear Music Shop. Book session or call 9580613911.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Rajdhani:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Sleek Top Announcement Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-content">
+            <div class="top-info">
+                <span><i class="fa-solid fa-compact-disc"></i> Full Song Production, Video Shoot & Music Store Under One Roof</span>
+                <span><i class="fa-solid fa-clock"></i> Studio Open 24/7 (Prior Appointment)</span>
+            </div>
+            <div class="top-contact">
+                <a href="tel:+919580613911"><i class="fa-solid fa-phone"></i> +91 9580613911</a>
+                <a href="https://wa.me/919580613911?text=Hello%20Raag%20Rachna%20Music%20Company,%20I%20want%20to%20inquire%20about%20Song%20Production%20/%20Studio%20Booking" target="_blank" class="whatsapp-top">
+                    <i class="fa-brands fa-whatsapp"></i> WhatsApp Inquiry
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header / Navigation (Ultra Compact & Sleek Single Line) -->
+    <header class="site-header">
+        <div class="container header-container">
+            <a href="#" class="brand-logo">
+                <div class="logo-icon"><i class="fa-solid fa-music"></i></div>
+                <div class="logo-text">
+                    <span class="logo-title">RAAG <span class="accent-text">RACHNA</span></span>
+                    <span class="logo-sub">MUSIC CO. & STUDIOS</span>
+                </div>
+            </a>
+
+            <nav class="main-nav">
+                <ul class="nav-menu">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#videos">Videos</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#player">Tracks</a></li>
+                    <li><a href="#store">Store</a></li>
+                    <li><a href="#calculator">Estimator</a></li>
+                    <li><a href="#gear">Gear</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="tel:+919580613911" class="phone-link-btn">
+                    <i class="fa-solid fa-phone"></i> 9580613911
+                </a>
+                <button class="btn btn-primary" onclick="openBookingModal('General Studio Booking')">
+                    <i class="fa-solid fa-microphone-lines"></i> Book Studio
+                </button>
+                <button class="mobile-toggle" aria-label="Toggle Menu" onclick="toggleMobileMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-drawer" id="mobileDrawer">
+        <div class="drawer-header">
+            <div class="logo-text">
+                <span class="logo-title">RAAG <span class="accent-text">RACHNA</span></span>
+                <span class="logo-sub">RECORD LABEL & STUDIOS</span>
+            </div>
+            <button class="close-drawer" onclick="toggleMobileMenu()"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <ul class="drawer-menu">
+            <li><a href="#home" onclick="toggleMobileMenu()"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="#videos" onclick="toggleMobileMenu()"><i class="fa-brands fa-youtube"></i> Featured Videos</a></li>
+            <li><a href="#services" onclick="toggleMobileMenu()"><i class="fa-solid fa-sliders"></i> Music Services</a></li>
+            <li><a href="#player" onclick="toggleMobileMenu()"><i class="fa-solid fa-circle-play"></i> Sample Audio Tracks</a></li>
+            <li><a href="#store" onclick="toggleMobileMenu()"><i class="fa-solid fa-bag-shopping"></i> Music Shop</a></li>
+            <li><a href="#calculator" onclick="toggleMobileMenu()"><i class="fa-solid fa-calculator"></i> Project Estimator</a></li>
+            <li><a href="#gear" onclick="toggleMobileMenu()"><i class="fa-solid fa-headphones-simple"></i> Studio Equipment</a></li>
+            <li><a href="#contact" onclick="toggleMobileMenu()"><i class="fa-solid fa-envelope"></i> Contact Us</a></li>
+        </ul>
+        <div class="drawer-actions">
+            <a href="tel:+919580613911" class="btn btn-outline btn-block mb-10">
+                <i class="fa-solid fa-phone"></i> Call 9580613911
+            </a>
+            <button class="btn btn-primary btn-block" onclick="toggleMobileMenu(); openBookingModal('Mobile Drawer');">
+                <i class="fa-solid fa-microphone-lines"></i> Book Studio Session
+            </button>
+        </div>
+    </div>
+
+    <!-- Hero Slider Section (5 Dynamic Music & Video Studio Carousel Slides) -->
+    <section id="home" class="hero-slider-section">
+        <div class="hero-slider-container">
+            <div class="hero-slides-wrapper" id="heroSlidesWrapper">
+                
+                <!-- Slide 1: Song Making & Production -->
+                <div class="hero-slide active">
+                    <div class="slide-bg" style="background-image: url('https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=1470&auto=format&fit=crop');"></div>
+                    <div class="slide-overlay"></div>
+                    <div class="container slide-content">
+                        <div class="hero-badge"><i class="fa-solid fa-record-vinyl"></i> Professional Song Production</div>
+                        <h1 class="slide-title">Create Original <span class="gradient-text">Hit Songs & Music</span></h1>
+                        <p class="slide-desc">From lyrics, song composition, and custom beat production to professional vocal tracking and Dolby Atmos mastering.</p>
+                        <div class="slide-cta-group">
+                            <button class="btn btn-primary btn-lg" onclick="openBookingModal('Full Song Making Package')">
+                                 <i class="fa-solid fa-record-vinyl"></i> Start Your Song Project
+                            </button>
+                            <a href="https://wa.me/919580613911?text=Hi%20Raag%20Rachna%20Music%20Company,%20I%20want%20to%20make%20a%20new%20song" target="_blank" class="btn btn-whatsapp btn-lg">
+                                <i class="fa-brands fa-whatsapp"></i> Chat With Producer
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2: 4K Music Video Shooting -->
+                <div class="hero-slide">
+                    <div class="slide-bg" style="background-image: url('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=1470&auto=format&fit=crop');"></div>
+                    <div class="slide-overlay"></div>
+                    <div class="container slide-content">
+                        <div class="hero-badge"><i class="fa-solid fa-video"></i> Cinema-Grade Video Shoot</div>
+                        <h2 class="slide-title">4K Music Video <span class="gradient-text">Direction & Editing</span></h2>
+                        <p class="slide-desc">High-end RED 4K video shoots, cinematic lighting, concept scripting, professional dance troupe & color grading.</p>
+                        <div class="slide-cta-group">
+                            <button class="btn btn-primary btn-lg" onclick="openBookingModal('4K Music Video Shoot')">
+                                <i class="fa-solid fa-clapperboard"></i> Book Video Shoot
+                            </button>
+                            <a href="tel:+919580613911" class="btn btn-outline btn-lg">
+                                <i class="fa-solid fa-phone"></i> Call 9580613911
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3: Audio Mixing & Mastering -->
+                <div class="hero-slide">
+                    <div class="slide-bg" style="background-image: url('https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=1470&auto=format&fit=crop');"></div>
+                    <div class="slide-overlay"></div>
+                    <div class="container slide-content">
+                        <div class="hero-badge"><i class="fa-solid fa-sliders"></i> World-Class Sound Quality</div>
+                        <h2 class="slide-title">Precision Audio <span class="gradient-text">Mixing & Mastering</span></h2>
+                        <p class="slide-desc">Analog SSL console warmth, vocal tuning, drum alignment, spatial audio, and streaming-ready loudness mastering.</p>
+                        <div class="slide-cta-group">
+                            <button class="btn btn-primary btn-lg" onclick="openBookingModal('Mixing & Mastering')">
+                                <i class="fa-solid fa-headphones"></i> Get Song Mixed
+                            </button>
+                            <button class="btn btn-whatsapp btn-lg" onclick="openBookingModal('Free Audio Audit')">
+                                <i class="fa-solid fa-circle-check"></i> Free Audio Review
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 4: Music Store & Studio Gear Buy -->
+                <div class="hero-slide">
+                    <div class="slide-bg" style="background-image: url('https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?q=80&w=1470&auto=format&fit=crop');"></div>
+                    <div class="slide-overlay"></div>
+                    <div class="container slide-content">
+                        <div class="hero-badge"><i class="fa-solid fa-store"></i> Authentic Music Gear Shop</div>
+                        <h2 class="slide-title">Buy Studio Microphones <span class="gradient-text">& Music Equipment</span></h2>
+                        <p class="slide-desc">Order 100% original Neumann condenser mics, Audio-Technica headphones, MIDI keyboards, & acoustic gear with warranty.</p>
+                        <div class="slide-cta-group">
+                            <a href="#store" class="btn btn-primary btn-lg">
+                                <i class="fa-solid fa-bag-shopping"></i> Browse Music Store
+                            </a>
+                            <a href="https://wa.me/919580613911?text=I%20want%20to%20buy%20music%20studio%20equipment%20from%20Raag%20Rachna%20Music%20Company" target="_blank" class="btn btn-whatsapp btn-lg">
+                                <i class="fa-brands fa-whatsapp"></i> Buy on WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 5: Global Music Distribution -->
+                <div class="hero-slide">
+                    <div class="slide-bg" style="background-image: url('https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=1470&auto=format&fit=crop');"></div>
+                    <div class="slide-overlay"></div>
+                    <div class="container slide-content">
+                        <div class="hero-badge"><i class="fa-solid fa-globe"></i> Global Release & Record Label</div>
+                        <h2 class="slide-title">Release Your Song On <span class="gradient-text">Spotify & Apple Music</span></h2>
+                        <p class="slide-desc">Get 100% royalty payouts, Official Artist Verification, YouTube Content ID copyright protection, & PR promotion.</p>
+                        <div class="slide-cta-group">
+                            <button class="btn btn-primary btn-lg" onclick="openBookingModal('Music Release & Distribution')">
+                                <i class="fa-solid fa-rocket"></i> Release Your Song
+                            </button>
+                            <a href="#contact" class="btn btn-outline btn-lg">
+                                <i class="fa-solid fa-paper-plane"></i> Contact Label Team
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Slider Controls -->
+            <button class="slider-arrow prev-arrow" onclick="prevHeroSlide()" aria-label="Previous Slide">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button class="slider-arrow next-arrow" onclick="nextHeroSlide()" aria-label="Next Slide">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+
+            <!-- Dots Navigation -->
+            <div class="slider-dots" id="heroSliderDots">
+                <span class="dot active" onclick="goToHeroSlide(0)"></span>
+                <span class="dot" onclick="goToHeroSlide(1)"></span>
+                <span class="dot" onclick="goToHeroSlide(2)"></span>
+                <span class="dot" onclick="goToHeroSlide(3)"></span>
+                <span class="dot" onclick="goToHeroSlide(4)"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured YouTube Videos Showcase Section (Clean 100% Clear Image Thumbnails) -->
+    <section id="videos" class="video-showcase-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="sub-heading">FEATURED VIDEO RELEASES</span>
+                <h2 class="fluid-h2">Watch Our Latest Music Videos & Studio Sessions</h2>
+                <p class="fluid-p">Click on any video thumbnail to watch directly on YouTube.</p>
+            </div>
+
+            <div class="video-grid">
+                <!-- Video Card 1 (K20ic724xdQ) -->
+                <div class="video-card">
+                    <a href="https://youtu.be/K20ic724xdQ" target="_blank" class="video-thumb-link" title="Click to Watch Raag Rachna Song Release">
+                        <div class="video-thumb-box">
+                            <img src="https://img.youtube.com/vi/K20ic724xdQ/hqdefault.jpg" alt="Raag Rachna Hit Song Release Video Thumbnail" class="video-thumb-img">
+                        </div>
+                    </a>
+                    <div class="video-info">
+                        <span class="video-badge"><i class="fa-solid fa-compact-disc"></i> Official Song Release</span>
+                        <h3>Raag Rachna Hit Song Release</h3>
+                        <p>Composed, recorded, mixed & shot in 4K cinema quality by Raag Rachna Music Company.</p>
+                        <div class="video-action-links">
+                            <a href="https://youtu.be/K20ic724xdQ" target="_blank" class="direct-yt-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Open Full Video</a>
+                            <a href="#player" onclick="selectTrack(0)" class="direct-yt-link audio-link"><i class="fa-solid fa-music"></i> Listen Studio Audio</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video Card 2 (igqCsmAbZ6w) -->
+                <div class="video-card">
+                    <a href="https://youtu.be/igqCsmAbZ6w" target="_blank" class="video-thumb-link" title="Click to Watch 4K Music Video Shoot">
+                        <div class="video-thumb-box">
+                            <img src="https://img.youtube.com/vi/igqCsmAbZ6w/hqdefault.jpg" alt="Cinematic Video Shoot Video Thumbnail" class="video-thumb-img">
+                        </div>
+                    </a>
+                    <div class="video-info">
+                        <span class="video-badge"><i class="fa-solid fa-video"></i> 4K Music Video Shoot</span>
+                        <h3>Cinematic Video Shoot & Studio Tracking</h3>
+                        <p>High-end RED 4K camera direction & vocal studio sessions at Raag Rachna Studios.</p>
+                        <div class="video-action-links">
+                            <a href="https://youtu.be/igqCsmAbZ6w" target="_blank" class="direct-yt-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Open Full Video</a>
+                            <a href="#player" onclick="selectTrack(1)" class="direct-yt-link audio-link"><i class="fa-solid fa-music"></i> Listen Studio Audio</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section (Song Making, Audio, Video & Distribution) -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="sub-heading">END-TO-END MUSIC SOLUTIONS</span>
+                <h2 class="fluid-h2">Complete Music Production & Media Services</h2>
+                <p class="fluid-p">Everything an independent singer, band, music producer, or brand needs under one roof.</p>
+            </div>
+
+            <div class="services-grid">
+
+                <!-- Service 1: Song Composing -->
+                <div class="service-card">
+                    <div class="srv-icon"><i class="fa-solid fa-music"></i></div>
+                    <h3>Song Composing & Beats</h3>
+                    <p>Custom melody creation, chord progression, Indian & Western music beat production tailored to your vocal style.</p>
+                    <ul class="srv-list">
+                        <li><i class="fa-solid fa-check"></i> Pop, Hip-Hop, Classical & Lo-Fi</li>
+                        <li><i class="fa-solid fa-check"></i> Exclusive Beat Copyright Ownership</li>
+                        <li><i class="fa-solid fa-check"></i> Custom Lyrics & Composition</li>
+                    </ul>
+                    <button class="btn btn-outline btn-sm btn-block" onclick="openBookingModal('Song Composing & Beats')">Book Composing</button>
+                </div>
+
+                <!-- Service 2: Studio Audio Recording -->
+                <div class="service-card highlighted-card">
+                    <div class="srv-badge">Most Popular</div>
+                    <div class="srv-icon"><i class="fa-solid fa-microphone-lines"></i></div>
+                    <h3>Pro Vocal & Audio Recording</h3>
+                    <p>Acoustically engineered soundproof booth with Neumann TLM mics & high-end preamps for crystal clear vocals.</p>
+                    <ul class="srv-list">
+                        <li><i class="fa-solid fa-check"></i> Soundproof Vocal Booth</li>
+                        <li><i class="fa-solid fa-check"></i> Live Instrument Tracking</li>
+                        <li><i class="fa-solid fa-check"></i> Resident Recording Engineer</li>
+                    </ul>
+                    <button class="btn btn-primary btn-sm btn-block" onclick="openBookingModal('Vocal & Audio Recording')">Book Recording Session</button>
+                </div>
+
+                <!-- Service 3: Audio Mixing & Mastering -->
+                <div class="service-card">
+                    <div class="srv-icon"><i class="fa-solid fa-sliders"></i></div>
+                    <h3>Mixing & Dolby Atmos Mastering</h3>
+                    <p>Balancing track instruments, pitch correction, analog warm EQ, compression, and loudness mastering for digital streaming.</p>
+                    <ul class="srv-list">
+                        <li><i class="fa-solid fa-check"></i> SSL Analog Warmth</li>
+                        <li><i class="fa-solid fa-check"></i> Autotune & Pitch Alignment</li>
+                        <li><i class="fa-solid fa-check"></i> Spotify & Apple Music Ready</li>
+                    </ul>
+                    <button class="btn btn-outline btn-sm btn-block" onclick="openBookingModal('Audio Mixing & Mastering')">Book Mixing & Master</button>
+                </div>
+
+                <!-- Service 4: 4K Music Video Production -->
+                <div class="service-card">
+                    <div class="srv-icon"><i class="fa-solid fa-clapperboard"></i></div>
+                    <h3>4K Music Video Shoot</h3>
+                    <p>Storyboarding, cinematic lighting, RED 4K video recording, location scouting, set design, and high-end video editing.</p>
+                    <ul class="srv-list">
+                        <li><i class="fa-solid fa-check"></i> RED / ARRI 4K Cinema Camera</li>
+                        <li><i class="fa-solid fa-check"></i> Drone Aerial Shots & VFX</li>
+                        <li><i class="fa-solid fa-check"></i> Color Grading & Reel Cuts</li>
+                    </ul>
+                    <button class="btn btn-outline btn-sm btn-block" onclick="openBookingModal('4K Music Video Shoot')">Book Music Video</button>
+                </div>
+
+                <!-- Service 5: Music Related Products Store -->
+                <div class="service-card">
+                    <div class="srv-icon"><i class="fa-solid fa-store"></i></div>
+                    <h3>Music Product Store & Buy</h3>
+                    <p>Buy 100% original studio microphones, headphones, audio interfaces, MIDI controllers, and acoustic accessories.</p>
+                    <ul class="srv-list">
+                        <li><i class="fa-solid fa-check"></i> Verified Brand Warranty</li>
+                        <li><i class="fa-solid fa-check"></i> Express Home Delivery</li>
+                        <li><i class="fa-solid fa-check"></i> Expert Gear Consultation</li>
+                    </ul>
+                    <a href="#store" class="btn btn-outline btn-sm btn-block">Explore Music Store</a>
+                </div>
+
+                <!-- Service 6: Song Distribution & Copyright -->
+                <div class="service-card">
+                    <div class="srv-icon"><i class="fa-solid fa-globe"></i></div>
+                    <h3>Global Release & Copyright</h3>
+                    <p>Release your song worldwide on 150+ platforms like Spotify, Apple Music, YouTube Music, Wynk, and Instagram Reels.</p>
+                    <ul class="srv-list">
+                        <li><i class="fa-solid fa-check"></i> 100% Royalty Ownership</li>
+                        <li><i class="fa-solid fa-check"></i> YouTube Content ID Protection</li>
+                        <li><i class="fa-solid fa-check"></i> Artist Profile Verification</li>
+                    </ul>
+                    <button class="btn btn-outline btn-sm btn-block" onclick="openBookingModal('Global Distribution')">Release Your Song</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Music Sample Player Section -->
+    <section id="player" class="player-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="sub-heading">STUDIO PRODUCTIONS</span>
+                <h2 class="fluid-h2">Listen To Our Latest Produced Hits</h2>
+                <p class="fluid-p">Play real studio audio samples across genres produced & engineered at Raag Rachna Music Company.</p>
+            </div>
+
+            <div class="player-box">
+                <div class="player-display">
+                    <div class="player-cover">
+                        <img id="trackCover" src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=600&auto=format&fit=crop" alt="Current Playing Track Cover">
+                    </div>
+                    <div class="player-info">
+                        <span class="player-genre-badge" id="trackGenre">Bollywood Pop</span>
+                        <h3 id="trackTitle">Dil Ki Dhadkan (Romantic Original)</h3>
+                        <p id="trackArtist">Produced by Raag Rachna Sound Team • Lead Vocals by Rahul</p>
+                        
+                        <div class="waveform-visualizer">
+                            <span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span>
+                            <span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span>
+                            <span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span>
+                        </div>
+
+                        <div class="audio-progress-bar">
+                            <span id="currentTime">0:00</span>
+                            <div class="progress-track" onclick="seekAudio(event)">
+                                <div class="progress-fill" id="progressFill"></div>
+                            </div>
+                            <span id="durationTime">2:45</span>
+                        </div>
+
+                        <div class="player-controls-row">
+                            <button class="ctrl-btn" onclick="prevTrack()"><i class="fa-solid fa-backward-step"></i></button>
+                            <button class="ctrl-btn play-main-btn" id="playBtn" onclick="togglePlay()"><i class="fa-solid fa-play"></i></button>
+                            <button class="ctrl-btn" onclick="nextTrack()"><i class="fa-solid fa-forward-step"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Playlist Selector Grid -->
+                <div class="playlist-grid">
+                    <div class="playlist-item active" onclick="selectTrack(0)">
+                        <i class="fa-solid fa-music"></i>
+                        <div>
+                            <strong>Dil Ki Dhadkan</strong>
+                            <span>Romantic Pop • 2:45</span>
+                        </div>
+                    </div>
+                    <div class="playlist-item" onclick="selectTrack(1)">
+                        <i class="fa-solid fa-compact-disc"></i>
+                        <div>
+                            <strong>Neon Street Anthem</strong>
+                            <span>Hip-Hop Trap Beat • 2:10</span>
+                        </div>
+                    </div>
+                    <div class="playlist-item" onclick="selectTrack(2)">
+                        <i class="fa-solid fa-guitar"></i>
+                        <div>
+                            <strong>Sufi Acoustic Vibes</strong>
+                            <span>Sufi Rock • 3:15</span>
+                        </div>
+                    </div>
+                    <div class="playlist-item" onclick="selectTrack(3)">
+                        <i class="fa-solid fa-headphones"></i>
+                        <div>
+                            <strong>Midnight Lo-Fi Chill</strong>
+                            <span>Chillstep Beat • 2:30</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Music Related Products Store (Buy Gear, Mics, Keyboards & Audio Equipment) -->
+    <section id="store" class="store-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="sub-heading">MUSIC STORE & GEAR</span>
+                <h2 class="fluid-h2">Buy Studio Equipment & Instruments</h2>
+                <p class="fluid-p">100% Genuine studio gear with official manufacturer warranty and free door delivery.</p>
+            </div>
+
+            <!-- Filter Bar -->
+            <div class="filter-bar">
+                <button class="filter-btn active" data-filter="all">All Gear</button>
+                <button class="filter-btn" data-filter="mics">Microphones</button>
+                <button class="filter-btn" data-filter="headphones">Headphones</button>
+                <button class="filter-btn" data-filter="keyboards">MIDI Keyboards</button>
+                <button class="filter-btn" data-filter="monitors">Monitors & Audio Interfaces</button>
+            </div>
+
+            <!-- Product Grid -->
+            <div class="product-grid" id="productGrid">
+
+                <!-- Product 1: Neumann Condenser Mic -->
+                <div class="product-card" data-category="mics">
+                    <div class="prod-badge">Studio Standard</div>
+                    <div class="prod-img-box">
+                        <img src="https://images.unsplash.com/photo-1590602847861-f357a9332bbc?q=80&w=800&auto=format&fit=crop" alt="Neumann TLM 102 Studio Mic" class="rounded-img">
+                    </div>
+                    <div class="prod-info">
+                        <span class="prod-cat">Condenser Microphone</span>
+                        <h3 class="fluid-card-title">Neumann TLM 102 Studio Mic</h3>
+                        <p class="prod-desc">Large-diaphragm studio condenser microphone with crystal clear vocal clarity & low noise floor.</p>
+                        <div class="specs-mini">
+                            <span><i class="fa-solid fa-shield"></i> 2 Yr Warranty</span>
+                            <span><i class="fa-solid fa-truck"></i> Free Shipping</span>
+                        </div>
+                        <div class="prod-action">
+                            <div class="prod-price">
+                                <span>Special Price</span>
+                                <strong>₹54,999</strong>
+                            </div>
+                            <button class="btn btn-primary btn-sm" onclick="buyProduct('Neumann TLM 102 Studio Mic', '54999')">
+                                <i class="fa-solid fa-cart-shopping"></i> Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2: Audio-Technica Headphones -->
+                <div class="product-card" data-category="headphones">
+                    <div class="prod-badge">Best Seller</div>
+                    <div class="prod-img-box">
+                        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=800&auto=format&fit=crop" alt="Audio-Technica ATH-M50x Headphones" class="rounded-img">
+                    </div>
+                    <div class="prod-info">
+                        <span class="prod-cat">Studio Headphones</span>
+                        <h3 class="fluid-card-title">Audio-Technica ATH-M50x</h3>
+                        <p class="prod-desc">Critically acclaimed monitor headphones used by top sound engineers & music producers worldwide.</p>
+                        <div class="specs-mini">
+                            <span><i class="fa-solid fa-shield"></i> 1 Yr Warranty</span>
+                            <span><i class="fa-solid fa-truck"></i> Free Shipping</span>
+                        </div>
+                        <div class="prod-action">
+                            <div class="prod-price">
+                                <span>Special Price</span>
+                                <strong>₹12,499</strong>
+                            </div>
+                            <button class="btn btn-primary btn-sm" onclick="buyProduct('Audio-Technica ATH-M50x', '12499')">
+                                <i class="fa-solid fa-cart-shopping"></i> Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3: Akai MIDI Controller Keyboard -->
+                <div class="product-card" data-category="keyboards">
+                    <div class="prod-badge">Popular</div>
+                    <div class="prod-img-box">
+                        <img src="https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?q=80&w=800&auto=format&fit=crop" alt="Akai MPK Mini Keyboard" class="rounded-img">
+                    </div>
+                    <div class="prod-info">
+                        <span class="prod-cat">MIDI Controller</span>
+                        <h3 class="fluid-card-title">Akai MPK Mini MK3 Keyboard</h3>
+                        <p class="prod-desc">25 velocity-sensitive keys with 8 backlit MPC pads & assignable knobs for beat making.</p>
+                        <div class="specs-mini">
+                            <span><i class="fa-solid fa-shield"></i> 1 Yr Warranty</span>
+                            <span><i class="fa-solid fa-truck"></i> Express Delivery</span>
+                        </div>
+                        <div class="prod-action">
+                            <div class="prod-price">
+                                <span>Special Price</span>
+                                <strong>₹8,999</strong>
+                            </div>
+                            <button class="btn btn-primary btn-sm" onclick="buyProduct('Akai MPK Mini MK3 Keyboard', '8999')">
+                                <i class="fa-solid fa-cart-shopping"></i> Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4: KRK Rokit Studio Monitors -->
+                <div class="product-card" data-category="monitors">
+                    <div class="prod-badge">High Power</div>
+                    <div class="prod-img-box">
+                        <img src="https://images.unsplash.com/photo-1545454675-3531b543be5d?q=80&w=800&auto=format&fit=crop" alt="KRK Rokit 5 Studio Monitor Pair" class="rounded-img">
+                    </div>
+                    <div class="prod-info">
+                        <span class="prod-cat">Studio Monitor Pair</span>
+                        <h3 class="fluid-card-title">KRK Rokit 5 G4 Monitors (Pair)</h3>
+                        <p class="prod-desc">Professional 5-inch bi-amp active studio monitors with DSP room tuning & LCD display.</p>
+                        <div class="specs-mini">
+                            <span><i class="fa-solid fa-shield"></i> 2 Yr Warranty</span>
+                            <span><i class="fa-solid fa-truck"></i> Safe Delivery</span>
+                        </div>
+                        <div class="prod-action">
+                            <div class="prod-price">
+                                <span>Special Price</span>
+                                <strong>₹32,999</strong>
+                            </div>
+                            <button class="btn btn-primary btn-sm" onclick="buyProduct('KRK Rokit 5 G4 Monitors Pair', '32999')">
+                                <i class="fa-solid fa-cart-shopping"></i> Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5: Focusrite Audio Interface -->
+                <div class="product-card" data-category="monitors">
+                    <div class="prod-badge">Essential</div>
+                    <div class="prod-img-box">
+                        <img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?q=80&w=800&auto=format&fit=crop" alt="Focusrite Scarlett 2i2 Audio Interface" class="rounded-img">
+                    </div>
+                    <div class="prod-info">
+                        <span class="prod-cat">Audio Interface</span>
+                        <h3 class="fluid-card-title">Focusrite Scarlett 2i2 4th Gen</h3>
+                        <p class="prod-desc">2-in/2-out USB audio interface with ultra-low noise preamps & Air mode for studio recordings.</p>
+                        <div class="specs-mini">
+                            <span><i class="fa-solid fa-shield"></i> 3 Yr Warranty</span>
+                            <span><i class="fa-solid fa-truck"></i> Free Delivery</span>
+                        </div>
+                        <div class="prod-action">
+                            <div class="prod-price">
+                                <span>Special Price</span>
+                                <strong>₹16,499</strong>
+                            </div>
+                            <button class="btn btn-primary btn-sm" onclick="buyProduct('Focusrite Scarlett 2i2 4th Gen', '16499')">
+                                <i class="fa-solid fa-cart-shopping"></i> Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6: Professional Acoustic Guitar -->
+                <div class="product-card" data-category="keyboards">
+                    <div class="prod-badge">Premium</div>
+                    <div class="prod-img-box">
+                        <img src="https://images.unsplash.com/photo-1510915361894-db8b60106cb1?q=80&w=800&auto=format&fit=crop" alt="Fender Dreadnought Acoustic Guitar" class="rounded-img">
+                    </div>
+                    <div class="prod-info">
+                        <span class="prod-cat">Acoustic Instrument</span>
+                        <h3 class="fluid-card-title">Fender CD-60S Acoustic Guitar</h3>
+                        <p class="prod-desc">Solid spruce top acoustic guitar with mahogany back & sides for rich resonant acoustic tone.</p>
+                        <div class="specs-mini">
+                            <span><i class="fa-solid fa-shield"></i> 1 Yr Warranty</span>
+                            <span><i class="fa-solid fa-truck"></i> Hard Case Free</span>
+                        </div>
+                        <div class="prod-action">
+                            <div class="prod-price">
+                                <span>Special Price</span>
+                                <strong>₹18,999</strong>
+                            </div>
+                            <button class="btn btn-primary btn-sm" onclick="buyProduct('Fender CD-60S Acoustic Guitar', '18999')">
+                                <i class="fa-solid fa-cart-shopping"></i> Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Dynamic Music Project Estimator Section -->
+    <section id="calculator" class="calculator-section">
+        <div class="container">
+            <div class="calc-box">
+                <div class="calc-header text-center">
+                    <span class="sub-heading">INTERACTIVE BUDGET ESTIMATOR</span>
+                    <h2 class="fluid-h2">Estimate Your Song & Video Project Cost</h2>
+                    <p class="fluid-p">Select your desired music services below to calculate your estimated package budget.</p>
+                </div>
+
+                <div class="calc-body-grid">
+                    <div class="calc-inputs">
+                        <div class="form-group">
+                            <label><strong>Select Required Services:</strong></label>
+
+                            <div class="calc-checkbox-group">
+                                <label class="checkbox-container">
+                                    <input type="checkbox" id="chkComposing" checked onchange="updateEstimator()">
+                                    <span class="checkmark"></span>
+                                    <span>Original Music Composition & Beats (₹8,000)</span>
+                                </label>
+
+                                <label class="checkbox-container">
+                                    <input type="checkbox" id="chkRecording" checked onchange="updateEstimator()">
+                                    <span class="checkmark"></span>
+                                    <span>Vocal Recording & Studio Session (₹4,000)</span>
+                                </label>
+
+                                <label class="checkbox-container">
+                                    <input type="checkbox" id="chkMixing" checked onchange="updateEstimator()">
+                                    <span class="checkmark"></span>
+                                    <span>Audio Mixing & Mastering (₹5,000)</span>
+                                </label>
+
+                                <label class="checkbox-container">
+                                    <input type="checkbox" id="chkVideo" onchange="updateEstimator()">
+                                    <span class="checkmark"></span>
+                                    <span>4K Cinematic Music Video Shoot (₹25,000)</span>
+                                </label>
+
+                                <label class="checkbox-container">
+                                    <input type="checkbox" id="chkDistribution" onchange="updateEstimator()">
+                                    <span class="checkmark"></span>
+                                    <span>Global Release (Spotify, Apple, YouTube ID) (₹3,000)</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="calc-results">
+                        <div class="result-card petrol-res">
+                            <span>Selected Services Count</span>
+                            <h3 id="selectedServicesCount">3 Services</h3>
+                        </div>
+                        <div class="result-card ev-res">
+                            <span>Estimated Time To Complete</span>
+                            <h3 id="estimatedTime">5 to 7 Days</h3>
+                        </div>
+                        <div class="savings-highlight">
+                            <span>Total Estimated Package Cost</span>
+                            <h3 id="totalEstimateVal">₹17,000</h3>
+                        </div>
+                        <button class="btn btn-primary btn-block" onclick="claimEstimateOffer()">
+                            <i class="fa-solid fa-paper-plane"></i> Lock Offer & Book On WhatsApp
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Studio Gear & Hardware Showcase -->
+    <section id="gear" class="features-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="sub-heading">WORLD-CLASS GEAR</span>
+                <h2 class="fluid-h2">Equipped With Flagship Studio Hardware</h2>
+                <p class="fluid-p">We record and process using high-end industry equipment trusted by Grammy-winning producers.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feat-icon"><i class="fa-solid fa-sliders"></i></div>
+                    <h3>SSL Analog Console</h3>
+                    <p>Solid State Logic analog summing console providing rich harmonic warmth, punchy drums, and deep spatial separation.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feat-icon"><i class="fa-solid fa-microphone-lines"></i></div>
+                    <h3>Neumann & Universal Audio</h3>
+                    <p>Vintage Neumann U87, TLM 103, and Universal Audio Apollo X8P 192kHz DSP audio converters for zero-latency tracking.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feat-icon"><i class="fa-solid fa-headphones-simple"></i></div>
+                    <h3>Genelec & Focal Monitors</h3>
+                    <p>Precision Genelec SAM 8341 active monitors calibrated for flat-frequency accuracy & pristine mix translation.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feat-icon"><i class="fa-solid fa-camera"></i></div>
+                    <h3>RED 4K Cinema Gear</h3>
+                    <p>RED Komodo 6K cinema camera setup, anamorphic lenses, Gimbal stabilizers, and Aputure studio video lighting rig.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Testimonials & Stats -->
+    <section class="reviews-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="sub-heading">OUR TRACK RECORD</span>
+                <h2 class="fluid-h2">10M+ Streamed Songs & Happy Artists</h2>
+            </div>
+
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>"Got my debut Punjabi single composed, recorded & shot at Raag Rachna Music Company. Song crossed 2 Million views on YouTube!"</p>
+                    <div class="reviewer">
+                        <strong>Rohan Gill</strong>
+                        <span>Singer & Lyricist</span>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>"Bought my Neumann TLM 102 mic from their store. 100% genuine product, fast delivery, and awesome technical support."</p>
+                    <div class="reviewer">
+                        <strong>Kavya Sharma</strong>
+                        <span>Music Producer</span>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>"The Dolby Atmos mixing quality is unmatched! Sounded crisp on Spotify and Apple Music. Highly recommend Raag Rachna!"</p>
+                    <div class="reviewer">
+                        <strong>DJ Vikram</strong>
+                        <span>EDM Artist</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Booking Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-box">
+                <div class="contact-form-side">
+                    <span class="sub-heading">START YOUR PROJECT</span>
+                    <h2 class="fluid-h2">Book Studio Session / Get Project Offer</h2>
+                    <p class="fluid-p">Fill in your details or call <strong>+91 9580613911</strong> to discuss your song or video shoot with our team.</p>
+
+                    <form id="inquiryForm" onsubmit="handleFormSubmit(event)">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="userName">Full Name *</label>
+                                <input type="text" id="userName" required placeholder="e.g. Aryan Malhotra" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="userPhone">Phone Number *</label>
+                                <input type="tel" id="userPhone" required placeholder="e.g. 9580613911" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="selectedService">Select Primary Service</label>
+                                <select id="selectedService" class="form-control">
+                                    <option value="Song Composing & Beats">Song Composing & Beats</option>
+                                    <option value="Vocal Recording Studio">Vocal Recording Studio</option>
+                                    <option value="Mixing & Mastering">Mixing & Mastering</option>
+                                    <option value="4K Video Shoot">4K Video Shoot</option>
+                                    <option value="Spotify & Apple Distribution">Spotify & Apple Distribution</option>
+                                    <option value="Buy Studio Gear / Equipment">Buy Studio Gear / Equipment</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="preferredDate">Preferred Date</label>
+                                <input type="date" id="preferredDate" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="userCity">Your City / Studio Location Preference</label>
+                            <input type="text" id="userCity" placeholder="e.g. Varanasi / Delhi / Remote Booking" class="form-control">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block btn-lg">
+                            <i class="fa-solid fa-paper-plane"></i> Submit Inquiry & Open WhatsApp
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-col branding-col">
+                <a href="#" class="brand-logo footer-logo">
+                    <div class="logo-icon"><i class="fa-solid fa-music"></i></div>
+                    <div class="logo-text">
+                        <span class="logo-title">RAAG <span class="accent-text">RACHNA</span></span>
+                        <span class="logo-sub">MUSIC COMPANY & STUDIOS</span>
+                    </div>
+                </a>
+                <p>Premier recording studio, music video production house, & certified music store. Turning your musical vision into hits.</p>
+                <div class="social-links">
+                    <a href="https://wa.me/919580613911" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="tel:+919580613911" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" aria-label="Spotify"><i class="fa-brands fa-spotify"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#videos">Featured Videos</a></li>
+                    <li><a href="#services">Music Services</a></li>
+                    <li><a href="#player">Audio Samples</a></li>
+                    <li><a href="#store">Music Store</a></li>
+                    <li><a href="#calculator">Budget Estimator</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Music Services</h4>
+                <ul class="footer-links">
+                    <li><a href="#contact" onclick="openBookingModal('Song Composing & Beats'); return false;">Song Composing & Beats</a></li>
+                    <li><a href="#contact" onclick="openBookingModal('Vocal Recording Studio'); return false;">Vocal Recording Studio</a></li>
+                    <li><a href="#contact" onclick="openBookingModal('Mixing & Mastering'); return false;">Mixing & Mastering</a></li>
+                    <li><a href="#contact" onclick="openBookingModal('4K Video Shoot'); return false;">4K Video Shoot</a></li>
+                    <li><a href="#contact" onclick="openBookingModal('Spotify & Apple Distribution'); return false;">Spotify & Apple Distribution</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Studio Address</h4>
+                <p class="footer-addr">
+                    <i class="fa-solid fa-location-dot"></i> Raag Rachna Studio Hub, Varanasi 221010
+                </p>
+                <p><i class="fa-solid fa-phone"></i> <strong>+91 9580613911</strong></p>
+                <p><i class="fa-solid fa-envelope"></i> info@raagrachnamusic.com</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container text-center">
+                <p>&copy; 2026 Raag Rachna Music Company. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Sticky Action Bar -->
+    <div class="mobile-sticky-bar">
+        <a href="tel:+919580613911" class="sticky-btn call-sticky">
+            <i class="fa-solid fa-phone"></i> Call 9580613911
+        </a>
+        <a href="https://wa.me/919580613911?text=Hello%20Raag%20Rachna%20Music%20Company,%20I%20want%20to%20inquire%20about%20Song%20Production" target="_blank" class="sticky-btn wa-sticky">
+            <i class="fa-brands fa-whatsapp"></i> WhatsApp Inquiry
+        </a>
+    </div>
+
+    <!-- Floating Sticky WhatsApp Button -->
+    <a href="https://wa.me/919580613911?text=Hello%20Raag%20Rachna%20Music%20Company,%20I%20want%20to%20inquire%20about%20Song%20Production" target="_blank" class="floating-wa" title="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Modal Popup for Booking & Inquiry -->
+    <div class="modal-backdrop" id="bookingModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeBookingModal()"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-header">
+                <h3><i class="fa-solid fa-music"></i> Book Studio / Request Offer</h3>
+                <p>Selected Service: <strong id="modalServiceName">Full Song Production</strong></p>
+            </div>
+            <form onsubmit="handleModalSubmit(event)">
+                <div class="form-group">
+                    <label for="modalName">Your Full Name</label>
+                    <input type="text" id="modalName" required placeholder="Enter your name" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="modalPhone">Mobile Number</label>
+                    <input type="tel" id="modalPhone" required placeholder="Enter 10-digit mobile" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="modalLocality">City / Preferred Studio Date</label>
+                    <input type="text" id="modalLocality" placeholder="e.g. Mumbai / Next Week" class="form-control">
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">
+                    <i class="fa-brands fa-whatsapp"></i> Confirm & Send on WhatsApp
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Hidden Audio Element for Track Player -->
+    <audio id="audioPlayer" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" preload="metadata"></audio>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
